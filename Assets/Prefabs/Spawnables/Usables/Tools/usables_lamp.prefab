@@ -68,6 +68,12 @@
               "go": "6a0199d3-6e4b-48f4-914f-e35a74169227",
               "component_type": "ModelCollider"
             },
+            "innerLight": {
+              "_type": "component",
+              "component_id": "4c8f3468-b222-493f-8ed7-cd28bc7567b6",
+              "go": "dd69f077-f21b-4c3b-9b51-329a7ad0caac",
+              "component_type": "SpotLight"
+            },
             "ModelRenderer": {
               "_type": "component",
               "component_id": "953ca5fb-6ef9-4bd0-99fa-24d22058d78b",
@@ -162,7 +168,7 @@
             "__version": 1,
             "Flags": 0,
             "Name": "Spot Light",
-            "Position": "0.7732851,0,0",
+            "Position": "-5.157174,0,0",
             "Rotation": "0,0,0,1",
             "Scale": "1,1,1",
             "Tags": "light_spot,light",
@@ -178,7 +184,7 @@
                 "__enabled": true,
                 "Attenuation": 1,
                 "ConeInner": 15,
-                "ConeOuter": 45,
+                "ConeOuter": 37.62295,
                 "Cookie": null,
                 "FogMode": "Enabled",
                 "FogStrength": 1,
@@ -190,6 +196,44 @@
                 "OnComponentStart": null,
                 "OnComponentUpdate": null,
                 "Radius": 500,
+                "Shadows": true
+              }
+            ],
+            "Children": []
+          },
+          {
+            "__guid": "dd69f077-f21b-4c3b-9b51-329a7ad0caac",
+            "__version": 1,
+            "Flags": 0,
+            "Name": "Inner Light",
+            "Position": "1.295432,0.0000005044604,0",
+            "Rotation": "0,0,-1,0.0000001947072",
+            "Scale": "1,1,1",
+            "Tags": "light_spot,light",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.SpotLight",
+                "__guid": "4c8f3468-b222-493f-8ed7-cd28bc7567b6",
+                "__enabled": true,
+                "Attenuation": 0,
+                "ConeInner": 87.78689,
+                "ConeOuter": 90,
+                "Cookie": null,
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "1,1,1,1",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Radius": 6.500411,
                 "Shadows": true
               }
             ],

@@ -7,6 +7,9 @@ public sealed class UsableLamp : BaseUsable
 {
 	[Property]
 	public SpotLight spotLight { get; set; }
+	
+	[Property]
+	public SpotLight innerLight { get; set; }
 
 	[Property]
 	public SoundEvent UseSound { get; set; }
@@ -27,11 +30,13 @@ public sealed class UsableLamp : BaseUsable
 			if ( isLampOn )
 			{
 				spotLight.Enabled = false;
+				innerLight.Enabled = false;
 				isLampOn = false;
 			}
 			else
 			{
 				spotLight.Enabled = true;
+				innerLight.Enabled = true;
 				isLampOn = true;
 			}
 		}

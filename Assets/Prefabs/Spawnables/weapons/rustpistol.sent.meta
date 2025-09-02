@@ -1,0 +1,21 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "Semi-Automatic Pistol - Rust",
+      "Type": "sent",
+      "Org": "gmodn",
+      "Ident": "rustpistol",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "prefabs/spawnables/weapons/rustpistol.sent"
+      }
+    }
+  }
+}

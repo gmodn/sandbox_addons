@@ -1,0 +1,8 @@
+{
+  "Prefab": "prefabs/spawnables/weapons/item_rustpistol.prefab",
+  "Title": "Semi-Automatic Pistol - Rust",
+  "Description": "The Semi-Automatic Pistol from Rust.",
+  "IncludeCode": true,
+  "__references": [],
+  "__version": 0
+}
