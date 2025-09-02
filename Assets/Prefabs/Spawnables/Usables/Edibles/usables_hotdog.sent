@@ -1,0 +1,8 @@
+{
+  "Prefab": "prefabs/spawnables/usables/edibles/usables_hotdog.prefab",
+  "Title": "Hotdog",
+  "Description": "Edible hotdog. Yummy!",
+  "IncludeCode": true,
+  "__references": [],
+  "__version": 0
+}

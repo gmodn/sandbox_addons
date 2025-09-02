@@ -1,0 +1,21 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "Hotdog",
+      "Type": "sent",
+      "Org": "gmodn",
+      "Ident": "usables_hotdog",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "prefabs/spawnables/usables/edibles/usables_hotdog.sent"
+      }
+    }
+  }
+}

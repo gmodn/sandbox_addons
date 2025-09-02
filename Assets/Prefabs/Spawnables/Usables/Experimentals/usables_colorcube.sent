@@ -1,0 +1,8 @@
+{
+  "Prefab": "prefabs/spawnables/usables/experimentals/usables_colorcube.prefab",
+  "Title": "Color Cube",
+  "Description": "A basic spawnable cube that changes color when you use it.",
+  "IncludeCode": true,
+  "__references": [],
+  "__version": 0
+}

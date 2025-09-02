@@ -1,0 +1,8 @@
+{
+  "Prefab": "prefabs/spawnables/usables/tools/usables_lamp.prefab",
+  "Title": "Lamp",
+  "Description": "A functional lamp!",
+  "IncludeCode": true,
+  "__references": [],
+  "__version": 0
+}

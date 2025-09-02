@@ -1,0 +1,184 @@
+{
+  "RootObject": {
+    "__guid": "d073533d-40f7-4e74-b7fb-8e0623fb1f59",
+    "__version": 1,
+    "Flags": 0,
+    "Name": "usables_hotdog",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "NetworkOrphaned": 0,
+    "OwnerTransfer": 1,
+    "Components": [],
+    "Children": [
+      {
+        "__guid": "2c4b1668-e00f-4b50-aa88-ed998f235509",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Hotdog",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.Rigidbody",
+            "__guid": "4c069598-a822-4561-b34c-d1379724874c",
+            "__enabled": true,
+            "AngularDamping": 0,
+            "Gravity": true,
+            "LinearDamping": 0,
+            "Locking": {
+              "X": false,
+              "Y": false,
+              "Z": false,
+              "Pitch": false,
+              "Yaw": false,
+              "Roll": false
+            },
+            "MassCenterOverride": "0,0,0",
+            "MassOverride": 0,
+            "MotionEnabled": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OverrideMassCenter": false,
+            "RigidbodyFlags": 0,
+            "StartAsleep": false
+          },
+          {
+            "__type": "Ian.Usables.Edibles.Hotdog",
+            "__guid": "affd23e7-467c-4f73-8f48-7eeab4e54dd1",
+            "__enabled": true,
+            "Collider": {
+              "_type": "component",
+              "component_id": "214a027c-4da5-47fa-8aca-95c40ef43ceb",
+              "go": "6a0199d3-6e4b-48f4-914f-e35a74169227",
+              "component_type": "ModelCollider"
+            },
+            "ModelRenderer": {
+              "_type": "component",
+              "component_id": "953ca5fb-6ef9-4bd0-99fa-24d22058d78b",
+              "go": "6a0199d3-6e4b-48f4-914f-e35a74169227",
+              "component_type": "ModelRenderer"
+            },
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "UseSound": "sounds/usables/edibles/roblox-eat.sound"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "6a0199d3-6e4b-48f4-914f-e35a74169227",
+            "__version": 1,
+            "Flags": 0,
+            "Name": "HotdogArt",
+            "Position": "0,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "953ca5fb-6ef9-4bd0-99fa-24d22058d78b",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "LodOverride": null,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Materials": null,
+                "Model": "models/citizen_props/hotdog01.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "Sandbox.ModelCollider",
+                "__guid": "214a027c-4da5-47fa-8aca-95c40ef43ceb",
+                "__enabled": true,
+                "Elasticity": null,
+                "Friction": null,
+                "IsTrigger": false,
+                "Model": "models/citizen_props/hotdog01.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "OnObjectTriggerEnter": null,
+                "OnObjectTriggerExit": null,
+                "OnTriggerEnter": null,
+                "OnTriggerExit": null,
+                "RollingResistance": null,
+                "Static": false,
+                "Surface": null,
+                "SurfaceVelocity": "0,0,0"
+              }
+            ],
+            "Children": []
+          }
+        ]
+      }
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [],
+  "__version": 2
+}
