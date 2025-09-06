@@ -1,8 +1,0 @@
-{
-  "Prefab": "prefabs/spawnables/usables/experimentals/mac128k.prefab",
-  "Title": "Macintosh",
-  "Description": "A working Macintosh emulator, powered by Infinite Mac!",
-  "IncludeCode": true,
-  "__references": [],
-  "__version": 0
-}
