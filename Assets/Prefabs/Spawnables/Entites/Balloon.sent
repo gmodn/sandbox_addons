@@ -1,0 +1,8 @@
+{
+  "Prefab": "prefabs/spawnables/entites/balloon.prefab",
+  "Title": "Balloon",
+  "Description": "A simple Balloon prop!",
+  "IncludeCode": true,
+  "__references": [],
+  "__version": 0
+}
