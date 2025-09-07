@@ -1,0 +1,8 @@
+{
+  "Prefab": "prefabs/spawnables/usables/experimentals/usables_mcsign.prefab",
+  "Title": "Minecraft Sign",
+  "Description": "A functional Minecraft Sign!",
+  "IncludeCode": true,
+  "__references": [],
+  "__version": 0
+}

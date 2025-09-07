@@ -301,6 +301,22 @@
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null
+        },
+        {
+          "__type": "Sandbox.Feed",
+          "__guid": "0872c097-1d54-484d-90d1-4d57cf50ec48",
+          "__enabled": true,
+          "DeathIcon": null,
+          "ExplosionIcon": null,
+          "FallIcon": null,
+          "HeadshotIcon": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SuicideIcon": null
         }
       ],
       "Children": []

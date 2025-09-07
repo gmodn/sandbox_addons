@@ -1,0 +1,544 @@
+{
+  "RootObject": {
+    "__guid": "83e6fef3-8b0b-463f-b046-3795813d34b1",
+    "__version": 1,
+    "Flags": 0,
+    "Name": "usables_mcsign",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "NetworkOrphaned": 0,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "Sandbox.Rigidbody",
+        "__guid": "964640b7-7ff2-40c2-aeb9-880bbc30188f",
+        "__enabled": true,
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {
+          "X": false,
+          "Y": false,
+          "Z": false,
+          "Pitch": false,
+          "Yaw": false,
+          "Roll": false
+        },
+        "MassCenterOverride": "0,0,0",
+        "MassOverride": 0,
+        "MotionEnabled": true,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OverrideMassCenter": false,
+        "RigidbodyFlags": 0,
+        "StartAsleep": true
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "f30c90c6-d2bf-48b5-b2e3-5b5278678481",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Art",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0.7071066,0.7071068",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "0584069f-7df9-4449-97a5-5e6f9ac9d331",
+            "__version": 1,
+            "Flags": 0,
+            "Name": "Cube",
+            "Position": "0,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "42b73206-298d-4d35-80c1-23d8d17c99fc",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "LodOverride": null,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Materials": null,
+                "Model": "models/props/mcsigns/sign.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "Sandbox.ModelCollider",
+                "__guid": "fa64af14-b453-4d17-9e07-184ed775f509",
+                "__enabled": true,
+                "Elasticity": null,
+                "Friction": null,
+                "IsTrigger": false,
+                "Model": "models/props/mcsigns/sign.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "OnObjectTriggerEnter": null,
+                "OnObjectTriggerExit": null,
+                "OnTriggerEnter": null,
+                "OnTriggerExit": null,
+                "RollingResistance": null,
+                "Static": false,
+                "Surface": null,
+                "SurfaceVelocity": "0,0,0"
+              }
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "__guid": "91a7c0e2-6637-4aba-95ea-d4c573148776",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Functional",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Ian.Usables.Props.MCSignManager",
+            "__guid": "a926c3a9-815f-45d5-9e68-0dad5d3644c1",
+            "__enabled": true,
+            "Collider": {
+              "_type": "component",
+              "component_id": "fa64af14-b453-4d17-9e07-184ed775f509",
+              "go": "0584069f-7df9-4449-97a5-5e6f9ac9d331",
+              "component_type": "ModelCollider"
+            },
+            "Line1Ref": {
+              "_type": "component",
+              "component_id": "ea466f20-ea0e-4762-ad45-9c18c1759f7e",
+              "go": "628efd52-0055-4b13-9f0f-d66609b30fe7",
+              "component_type": "TextRenderer"
+            },
+            "Line2Ref": {
+              "_type": "component",
+              "component_id": "eb89cd03-4020-435a-94a5-371771439e93",
+              "go": "8632f2ca-a74b-4467-bb03-9ed506c57e0b",
+              "component_type": "TextRenderer"
+            },
+            "Line3Ref": {
+              "_type": "component",
+              "component_id": "499081af-612b-4af4-bbf2-80a86f5df95c",
+              "go": "f3befa0f-618f-4be0-9a32-1c546f0cbcc4",
+              "component_type": "TextRenderer"
+            },
+            "Line4Ref": {
+              "_type": "component",
+              "component_id": "0085882a-c5d4-494a-9a80-b6652ec30edf",
+              "go": "92a813b5-acc9-406d-bf58-b5ec0382d1f7",
+              "component_type": "TextRenderer"
+            },
+            "ModelRenderer": {
+              "_type": "component",
+              "component_id": "42b73206-298d-4d35-80c1-23d8d17c99fc",
+              "go": "0584069f-7df9-4449-97a5-5e6f9ac9d331",
+              "component_type": "ModelRenderer"
+            },
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "724adbc1-ba47-4e80-abcb-778467224054",
+            "__version": 1,
+            "Flags": 0,
+            "Name": "Text",
+            "Position": "0,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": [
+              {
+                "__guid": "628efd52-0055-4b13-9f0f-d66609b30fe7",
+                "__version": 1,
+                "Flags": 0,
+                "Name": "Line 1",
+                "Position": "1.630731,0.0000006350301,36.45952",
+                "Rotation": "0,0,-1,0.0000001947072",
+                "Scale": "0.8,1,1",
+                "Tags": "",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "NetworkOrphaned": 0,
+                "OwnerTransfer": 1,
+                "Components": [
+                  {
+                    "__type": "Sandbox.TextRenderer",
+                    "__guid": "ea466f20-ea0e-4762-ad45-9c18c1759f7e",
+                    "__enabled": true,
+                    "__version": 2,
+                    "BlendMode": "Normal",
+                    "FogStrength": 1,
+                    "HorizontalAlignment": "Center",
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "RenderOptions": {
+                      "GameLayer": true,
+                      "OverlayLayer": false,
+                      "BloomLayer": false,
+                      "AfterUILayer": false
+                    },
+                    "Scale": 0.058333334,
+                    "TextScope": {
+                      "Text": "Line 1",
+                      "TextColor": "0,0,0,1",
+                      "FontName": "Mojangles",
+                      "FontSize": 64,
+                      "FontWeight": 800,
+                      "FontItalic": false,
+                      "LineHeight": 1,
+                      "LetterSpacing": 0,
+                      "WordSpacing": 0,
+                      "FilterMode": "Point",
+                      "Outline": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,1,1"
+                      },
+                      "Shadow": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,0,1",
+                        "Offset": "4,4"
+                      },
+                      "OutlineUnder": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,1,0,1"
+                      },
+                      "ShadowUnder": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,0,1",
+                        "Offset": "4,4"
+                      }
+                    },
+                    "VerticalAlignment": "Center"
+                  }
+                ],
+                "Children": []
+              },
+              {
+                "__guid": "8632f2ca-a74b-4467-bb03-9ed506c57e0b",
+                "__version": 1,
+                "Flags": 0,
+                "Name": "Line 2",
+                "Position": "1.630731,0.0000006350301,32.46459",
+                "Rotation": "0,0,-1,0.0000001947072",
+                "Scale": "0.8,1,1",
+                "Tags": "",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "NetworkOrphaned": 0,
+                "OwnerTransfer": 1,
+                "Components": [
+                  {
+                    "__type": "Sandbox.TextRenderer",
+                    "__guid": "eb89cd03-4020-435a-94a5-371771439e93",
+                    "__enabled": true,
+                    "__version": 2,
+                    "BlendMode": "Normal",
+                    "FogStrength": 1,
+                    "HorizontalAlignment": "Center",
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "RenderOptions": {
+                      "GameLayer": true,
+                      "OverlayLayer": false,
+                      "BloomLayer": false,
+                      "AfterUILayer": false
+                    },
+                    "Scale": 0.058333334,
+                    "TextScope": {
+                      "Text": "Line 2",
+                      "TextColor": "0,0,0,1",
+                      "FontName": "Mojangles",
+                      "FontSize": 64,
+                      "FontWeight": 800,
+                      "FontItalic": false,
+                      "LineHeight": 1,
+                      "LetterSpacing": 0,
+                      "WordSpacing": 0,
+                      "FilterMode": "Point",
+                      "Outline": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,1,1"
+                      },
+                      "Shadow": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,0,1",
+                        "Offset": "4,4"
+                      },
+                      "OutlineUnder": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,1,0,1"
+                      },
+                      "ShadowUnder": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,0,1",
+                        "Offset": "4,4"
+                      }
+                    },
+                    "VerticalAlignment": "Center"
+                  }
+                ],
+                "Children": []
+              },
+              {
+                "__guid": "f3befa0f-618f-4be0-9a32-1c546f0cbcc4",
+                "__version": 1,
+                "Flags": 0,
+                "Name": "Line 3",
+                "Position": "1.630731,0.0000006350301,28.21346",
+                "Rotation": "0,0,-1,0.0000001947072",
+                "Scale": "0.8,1,1",
+                "Tags": "",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "NetworkOrphaned": 0,
+                "OwnerTransfer": 1,
+                "Components": [
+                  {
+                    "__type": "Sandbox.TextRenderer",
+                    "__guid": "499081af-612b-4af4-bbf2-80a86f5df95c",
+                    "__enabled": true,
+                    "__version": 2,
+                    "BlendMode": "Normal",
+                    "FogStrength": 1,
+                    "HorizontalAlignment": "Center",
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "RenderOptions": {
+                      "GameLayer": true,
+                      "OverlayLayer": false,
+                      "BloomLayer": false,
+                      "AfterUILayer": false
+                    },
+                    "Scale": 0.058333334,
+                    "TextScope": {
+                      "Text": "Line 3",
+                      "TextColor": "0,0,0,1",
+                      "FontName": "Mojangles",
+                      "FontSize": 64,
+                      "FontWeight": 800,
+                      "FontItalic": false,
+                      "LineHeight": 1,
+                      "LetterSpacing": 0,
+                      "WordSpacing": 0,
+                      "FilterMode": "Point",
+                      "Outline": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,1,1"
+                      },
+                      "Shadow": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,0,1",
+                        "Offset": "4,4"
+                      },
+                      "OutlineUnder": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,1,0,1"
+                      },
+                      "ShadowUnder": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,0,1",
+                        "Offset": "4,4"
+                      }
+                    },
+                    "VerticalAlignment": "Center"
+                  }
+                ],
+                "Children": []
+              },
+              {
+                "__guid": "92a813b5-acc9-406d-bf58-b5ec0382d1f7",
+                "__version": 1,
+                "Flags": 0,
+                "Name": "Line 4",
+                "Position": "1.630731,0.0000006350301,24.25291",
+                "Rotation": "0,0,-1,0.0000001947072",
+                "Scale": "0.8,1,1",
+                "Tags": "",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "NetworkOrphaned": 0,
+                "OwnerTransfer": 1,
+                "Components": [
+                  {
+                    "__type": "Sandbox.TextRenderer",
+                    "__guid": "0085882a-c5d4-494a-9a80-b6652ec30edf",
+                    "__enabled": true,
+                    "__version": 2,
+                    "BlendMode": "Normal",
+                    "FogStrength": 1,
+                    "HorizontalAlignment": "Center",
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "RenderOptions": {
+                      "GameLayer": true,
+                      "OverlayLayer": false,
+                      "BloomLayer": false,
+                      "AfterUILayer": false
+                    },
+                    "Scale": 0.058333334,
+                    "TextScope": {
+                      "Text": "Line 4",
+                      "TextColor": "0,0,0,1",
+                      "FontName": "Mojangles",
+                      "FontSize": 64,
+                      "FontWeight": 800,
+                      "FontItalic": false,
+                      "LineHeight": 1,
+                      "LetterSpacing": 0,
+                      "WordSpacing": 0,
+                      "FilterMode": "Point",
+                      "Outline": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,1,1"
+                      },
+                      "Shadow": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,0,1",
+                        "Offset": "4,4"
+                      },
+                      "OutlineUnder": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,1,0,1"
+                      },
+                      "ShadowUnder": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,0,1",
+                        "Offset": "4,4"
+                      }
+                    },
+                    "VerticalAlignment": "Center"
+                  }
+                ],
+                "Children": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [],
+  "__version": 2
+}
