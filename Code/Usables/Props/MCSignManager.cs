@@ -7,9 +7,12 @@ using Sandbox.Internal;
 namespace Ian.Usables.Props;
 
 [Title( "Minecraft Sign Manager" ), Icon( "table_sign" ), Category( "Usables" )]
-public sealed class MCSignManager : BaseUsable
+public class MCSignManager : BaseUsable
 {
-	//References for Text objects
+	// General
+	[Property] public SoundEvent UseSound { get; set; }
+
+	// References for Text objects
 	[Property] TextRenderer Line1Ref { get; set; }
 	[Property] TextRenderer Line2Ref { get; set; }
 	[Property] TextRenderer Line3Ref { get; set; }
@@ -18,6 +21,7 @@ public sealed class MCSignManager : BaseUsable
 	public override void OnUse()
 	{
 		base.OnUse();
+		Sound.Play( UseSound );
 		RefreshText();
 		Log.Info( "Attempted to use the sign!" );
 	}

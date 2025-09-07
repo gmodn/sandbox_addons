@@ -1,6 +1,6 @@
 {
   "RootObject": {
-    "__guid": "83e6fef3-8b0b-463f-b046-3795813d34b1",
+    "__guid": "d073533d-40f7-4e74-b7fb-8e0623fb1f59",
     "__version": 1,
     "Flags": 0,
     "Name": "usables_mcsign",
@@ -13,44 +13,15 @@
     "NetworkInterpolation": true,
     "NetworkOrphaned": 0,
     "OwnerTransfer": 1,
-    "Components": [
-      {
-        "__type": "Sandbox.Rigidbody",
-        "__guid": "964640b7-7ff2-40c2-aeb9-880bbc30188f",
-        "__enabled": true,
-        "AngularDamping": 0,
-        "Gravity": true,
-        "LinearDamping": 0,
-        "Locking": {
-          "X": false,
-          "Y": false,
-          "Z": false,
-          "Pitch": false,
-          "Yaw": false,
-          "Roll": false
-        },
-        "MassCenterOverride": "0,0,0",
-        "MassOverride": 0,
-        "MotionEnabled": false,
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null,
-        "OverrideMassCenter": false,
-        "RigidbodyFlags": 0,
-        "StartAsleep": true
-      }
-    ],
+    "Components": [],
     "Children": [
       {
-        "__guid": "f30c90c6-d2bf-48b5-b2e3-5b5278678481",
+        "__guid": "2c4b1668-e00f-4b50-aa88-ed998f235509",
         "__version": 1,
         "Flags": 0,
-        "Name": "Art",
+        "Name": "ColorCube",
         "Position": "0,0,0",
-        "Rotation": "0,0,0.7071066,0.7071068",
+        "Rotation": "0,0,0,1",
         "Scale": "1,1,1",
         "Tags": "",
         "Enabled": true,
@@ -58,16 +29,93 @@
         "NetworkInterpolation": true,
         "NetworkOrphaned": 0,
         "OwnerTransfer": 1,
-        "Components": [],
+        "Components": [
+          {
+            "__type": "Sandbox.Rigidbody",
+            "__guid": "4c069598-a822-4561-b34c-d1379724874c",
+            "__enabled": true,
+            "AngularDamping": 0,
+            "Gravity": true,
+            "LinearDamping": 0,
+            "Locking": {
+              "X": false,
+              "Y": false,
+              "Z": false,
+              "Pitch": false,
+              "Yaw": false,
+              "Roll": false
+            },
+            "MassCenterOverride": "0,0,0",
+            "MassOverride": 0,
+            "MotionEnabled": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OverrideMassCenter": false,
+            "RigidbodyFlags": 0,
+            "StartAsleep": false
+          },
+          {
+            "__type": "Ian.Usables.Props.MCSignManager",
+            "__guid": "bf8088e6-0c5d-4602-a93f-00bf3fa21ebd",
+            "__enabled": true,
+            "Collider": {
+              "_type": "component",
+              "component_id": "dd4dfcfd-762b-485d-8dcd-31460554d8d8",
+              "go": "6a0199d3-6e4b-48f4-914f-e35a74169227",
+              "component_type": "BoxCollider"
+            },
+            "Line1Ref": {
+              "_type": "component",
+              "component_id": "a60a1806-dc47-42b6-bf71-c5e312ad98d1",
+              "go": "62eb8676-5ad6-42d6-90fe-e046b90e346f",
+              "component_type": "TextRenderer"
+            },
+            "Line2Ref": {
+              "_type": "component",
+              "component_id": "9b0cb566-87c7-429f-8e54-e7fcc2fbb66b",
+              "go": "1e76db15-abd6-4158-b732-05c758e2a72f",
+              "component_type": "TextRenderer"
+            },
+            "Line3Ref": {
+              "_type": "component",
+              "component_id": "15c4aca2-22d6-4eba-9039-02e1771a678d",
+              "go": "d8c0360c-5baa-453c-a5ae-d33dd076f37d",
+              "component_type": "TextRenderer"
+            },
+            "Line4Ref": {
+              "_type": "component",
+              "component_id": "166a7dad-5923-45a6-b6bc-23c9f6d6c602",
+              "go": "38b8bd36-fa91-4408-a41b-b87bcb5ccf87",
+              "component_type": "TextRenderer"
+            },
+            "ModelRenderer": {
+              "_type": "component",
+              "component_id": "953ca5fb-6ef9-4bd0-99fa-24d22058d78b",
+              "go": "6a0199d3-6e4b-48f4-914f-e35a74169227",
+              "component_type": "ModelRenderer"
+            },
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "UseSound": "sounds/usables/prop/wood click.sound"
+          }
+        ],
         "Children": [
           {
-            "__guid": "0584069f-7df9-4449-97a5-5e6f9ac9d331",
+            "__guid": "6a0199d3-6e4b-48f4-914f-e35a74169227",
             "__version": 1,
             "Flags": 0,
-            "Name": "Sign",
+            "Name": "SignArt",
             "Position": "0,0,0",
             "Rotation": "0,0,0,1",
-            "Scale": "1,1,1",
+            "Scale": "0.5,0.5,0.5",
             "Tags": "",
             "Enabled": true,
             "NetworkMode": 2,
@@ -77,7 +125,7 @@
             "Components": [
               {
                 "__type": "Sandbox.ModelRenderer",
-                "__guid": "42b73206-298d-4d35-80c1-23d8d17c99fc",
+                "__guid": "953ca5fb-6ef9-4bd0-99fa-24d22058d78b",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
                 "CreateAttachments": false,
@@ -85,7 +133,7 @@
                 "MaterialGroup": null,
                 "MaterialOverride": null,
                 "Materials": null,
-                "Model": "models/props/mcsigns/sign.vmdl",
+                "Model": "models/dev/box.vmdl",
                 "OnComponentDestroy": null,
                 "OnComponentDisabled": null,
                 "OnComponentEnabled": null,
@@ -102,13 +150,13 @@
                 "Tint": "1,1,1,1"
               },
               {
-                "__type": "Sandbox.ModelCollider",
-                "__guid": "fa64af14-b453-4d17-9e07-184ed775f509",
+                "__type": "Sandbox.BoxCollider",
+                "__guid": "dd4dfcfd-762b-485d-8dcd-31460554d8d8",
                 "__enabled": true,
+                "Center": "0,0,0",
                 "Elasticity": null,
                 "Friction": null,
                 "IsTrigger": false,
-                "Model": "models/props/mcsigns/sign.vmdl",
                 "OnComponentDestroy": null,
                 "OnComponentDisabled": null,
                 "OnComponentEnabled": null,
@@ -120,103 +168,21 @@
                 "OnTriggerEnter": null,
                 "OnTriggerExit": null,
                 "RollingResistance": null,
+                "Scale": "50,50,50",
                 "Static": false,
                 "Surface": null,
                 "SurfaceVelocity": "0,0,0"
               }
             ],
-            "Children": []
-          }
-        ]
-      },
-      {
-        "__guid": "91a7c0e2-6637-4aba-95ea-d4c573148776",
-        "__version": 1,
-        "Flags": 0,
-        "Name": "Functional",
-        "Position": "0,0,0",
-        "Rotation": "0,0,0,1",
-        "Scale": "1,1,1",
-        "Tags": "",
-        "Enabled": true,
-        "NetworkMode": 2,
-        "NetworkInterpolation": true,
-        "NetworkOrphaned": 0,
-        "OwnerTransfer": 1,
-        "Components": [
-          {
-            "__type": "Ian.Usables.Props.MCSignManager",
-            "__guid": "a926c3a9-815f-45d5-9e68-0dad5d3644c1",
-            "__enabled": true,
-            "Collider": {
-              "_type": "component",
-              "component_id": "fa64af14-b453-4d17-9e07-184ed775f509",
-              "go": "0584069f-7df9-4449-97a5-5e6f9ac9d331",
-              "component_type": "ModelCollider"
-            },
-            "Line1Ref": {
-              "_type": "component",
-              "component_id": "ea466f20-ea0e-4762-ad45-9c18c1759f7e",
-              "go": "628efd52-0055-4b13-9f0f-d66609b30fe7",
-              "component_type": "TextRenderer"
-            },
-            "Line2Ref": {
-              "_type": "component",
-              "component_id": "eb89cd03-4020-435a-94a5-371771439e93",
-              "go": "8632f2ca-a74b-4467-bb03-9ed506c57e0b",
-              "component_type": "TextRenderer"
-            },
-            "Line3Ref": {
-              "_type": "component",
-              "component_id": "499081af-612b-4af4-bbf2-80a86f5df95c",
-              "go": "f3befa0f-618f-4be0-9a32-1c546f0cbcc4",
-              "component_type": "TextRenderer"
-            },
-            "Line4Ref": {
-              "_type": "component",
-              "component_id": "0085882a-c5d4-494a-9a80-b6652ec30edf",
-              "go": "92a813b5-acc9-406d-bf58-b5ec0382d1f7",
-              "component_type": "TextRenderer"
-            },
-            "ModelRenderer": {
-              "_type": "component",
-              "component_id": "42b73206-298d-4d35-80c1-23d8d17c99fc",
-              "go": "0584069f-7df9-4449-97a5-5e6f9ac9d331",
-              "component_type": "ModelRenderer"
-            },
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null
-          }
-        ],
-        "Children": [
-          {
-            "__guid": "724adbc1-ba47-4e80-abcb-778467224054",
-            "__version": 1,
-            "Flags": 0,
-            "Name": "Text",
-            "Position": "0,0,0",
-            "Rotation": "0,0,0,1",
-            "Scale": "1,1,1",
-            "Tags": "",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "NetworkInterpolation": true,
-            "NetworkOrphaned": 0,
-            "OwnerTransfer": 1,
-            "Components": [],
             "Children": [
               {
-                "__guid": "628efd52-0055-4b13-9f0f-d66609b30fe7",
+                "__guid": "62eb8676-5ad6-42d6-90fe-e046b90e346f",
                 "__version": 1,
                 "Flags": 0,
-                "Name": "Line 1",
-                "Position": "1.630731,0.0000006350301,36.97962",
-                "Rotation": "0,0,-1,0.0000001947072",
-                "Scale": "0.8,1,1",
+                "Name": "Text1",
+                "Position": "0,0,77.28513",
+                "Rotation": "0,0,0,1",
+                "Scale": "1,1,1",
                 "Tags": "",
                 "Enabled": true,
                 "NetworkMode": 2,
@@ -226,7 +192,7 @@
                 "Components": [
                   {
                     "__type": "Sandbox.TextRenderer",
-                    "__guid": "ea466f20-ea0e-4762-ad45-9c18c1759f7e",
+                    "__guid": "a60a1806-dc47-42b6-bf71-c5e312ad98d1",
                     "__enabled": true,
                     "__version": 2,
                     "BlendMode": "Normal",
@@ -244,18 +210,18 @@
                       "BloomLayer": false,
                       "AfterUILayer": false
                     },
-                    "Scale": 0.058333334,
+                    "Scale": 0.3,
                     "TextScope": {
-                      "Text": "Hello!",
-                      "TextColor": "0,0,0,1",
-                      "FontName": "Mojangles",
+                      "Text": "Hello! ❤",
+                      "TextColor": "0.45103,0.47149,0.5297,1",
+                      "FontName": "Poppins",
                       "FontSize": 64,
                       "FontWeight": 800,
                       "FontItalic": false,
                       "LineHeight": 1,
                       "LetterSpacing": 0,
                       "WordSpacing": 0,
-                      "FilterMode": "Point",
+                      "FilterMode": "Bilinear",
                       "Outline": {
                         "Enabled": false,
                         "Size": 4,
@@ -285,13 +251,13 @@
                 "Children": []
               },
               {
-                "__guid": "8632f2ca-a74b-4467-bb03-9ed506c57e0b",
+                "__guid": "d8c0360c-5baa-453c-a5ae-d33dd076f37d",
                 "__version": 1,
                 "Flags": 0,
-                "Name": "Line 2",
-                "Position": "1.630731,0.0000006350301,32.8346",
-                "Rotation": "0,0,-1,0.0000001947072",
-                "Scale": "0.8,1,1",
+                "Name": "Text3",
+                "Position": "0,0,52.16391",
+                "Rotation": "0,0,0,1",
+                "Scale": "1,1,1",
                 "Tags": "",
                 "Enabled": true,
                 "NetworkMode": 2,
@@ -301,7 +267,7 @@
                 "Components": [
                   {
                     "__type": "Sandbox.TextRenderer",
-                    "__guid": "eb89cd03-4020-435a-94a5-371771439e93",
+                    "__guid": "15c4aca2-22d6-4eba-9039-02e1771a678d",
                     "__enabled": true,
                     "__version": 2,
                     "BlendMode": "Normal",
@@ -319,18 +285,18 @@
                       "BloomLayer": false,
                       "AfterUILayer": false
                     },
-                    "Scale": 0.058333334,
+                    "Scale": 0.3,
                     "TextScope": {
-                      "Text": "use the",
-                      "TextColor": "0,0,0,1",
-                      "FontName": "Mojangles",
+                      "Text": "Hello! ❤",
+                      "TextColor": "0.45103,0.47149,0.5297,1",
+                      "FontName": "Poppins",
                       "FontSize": 64,
                       "FontWeight": 800,
                       "FontItalic": false,
                       "LineHeight": 1,
                       "LetterSpacing": 0,
                       "WordSpacing": 0,
-                      "FilterMode": "Point",
+                      "FilterMode": "Bilinear",
                       "Outline": {
                         "Enabled": false,
                         "Size": 4,
@@ -360,13 +326,13 @@
                 "Children": []
               },
               {
-                "__guid": "f3befa0f-618f-4be0-9a32-1c546f0cbcc4",
+                "__guid": "1e76db15-abd6-4158-b732-05c758e2a72f",
                 "__version": 1,
                 "Flags": 0,
-                "Name": "Line 3",
-                "Position": "1.630731,0.0000006350301,29.06921",
-                "Rotation": "0,0,-1,0.0000001947072",
-                "Scale": "0.8,1,1",
+                "Name": "Text2",
+                "Position": "0,0,64.09037",
+                "Rotation": "0,0,0,1",
+                "Scale": "1,1,1",
                 "Tags": "",
                 "Enabled": true,
                 "NetworkMode": 2,
@@ -376,7 +342,7 @@
                 "Components": [
                   {
                     "__type": "Sandbox.TextRenderer",
-                    "__guid": "499081af-612b-4af4-bbf2-80a86f5df95c",
+                    "__guid": "9b0cb566-87c7-429f-8e54-e7fcc2fbb66b",
                     "__enabled": true,
                     "__version": 2,
                     "BlendMode": "Normal",
@@ -394,18 +360,18 @@
                       "BloomLayer": false,
                       "AfterUILayer": false
                     },
-                    "Scale": 0.058333334,
+                    "Scale": 0.3,
                     "TextScope": {
-                      "Text": "\"mcsign_set\" cmd",
-                      "TextColor": "0,0,0,1",
-                      "FontName": "Mojangles",
+                      "Text": "Hello! ❤",
+                      "TextColor": "0.45103,0.47149,0.5297,1",
+                      "FontName": "Poppins",
                       "FontSize": 64,
                       "FontWeight": 800,
                       "FontItalic": false,
                       "LineHeight": 1,
                       "LetterSpacing": 0,
                       "WordSpacing": 0,
-                      "FilterMode": "Point",
+                      "FilterMode": "Bilinear",
                       "Outline": {
                         "Enabled": false,
                         "Size": 4,
@@ -435,13 +401,13 @@
                 "Children": []
               },
               {
-                "__guid": "92a813b5-acc9-406d-bf58-b5ec0382d1f7",
+                "__guid": "38b8bd36-fa91-4408-a41b-b87bcb5ccf87",
                 "__version": 1,
                 "Flags": 0,
-                "Name": "Line 4",
-                "Position": "1.630731,0.0000006350301,24.25291",
-                "Rotation": "0,0,-1,0.0000001947072",
-                "Scale": "0.8,1,1",
+                "Name": "Text4",
+                "Position": "0,0,39.11141",
+                "Rotation": "0,0,0,1",
+                "Scale": "1,1,1",
                 "Tags": "",
                 "Enabled": true,
                 "NetworkMode": 2,
@@ -451,7 +417,7 @@
                 "Components": [
                   {
                     "__type": "Sandbox.TextRenderer",
-                    "__guid": "0085882a-c5d4-494a-9a80-b6652ec30edf",
+                    "__guid": "166a7dad-5923-45a6-b6bc-23c9f6d6c602",
                     "__enabled": true,
                     "__version": 2,
                     "BlendMode": "Normal",
@@ -469,18 +435,18 @@
                       "BloomLayer": false,
                       "AfterUILayer": false
                     },
-                    "Scale": 0.058333334,
+                    "Scale": 0.3,
                     "TextScope": {
-                      "Text": "to set the text!",
-                      "TextColor": "0,0,0,1",
-                      "FontName": "Mojangles",
+                      "Text": "Hello! ❤",
+                      "TextColor": "0.45103,0.47149,0.5297,1",
+                      "FontName": "Poppins",
                       "FontSize": 64,
                       "FontWeight": 800,
                       "FontItalic": false,
                       "LineHeight": 1,
                       "LetterSpacing": 0,
                       "WordSpacing": 0,
-                      "FilterMode": "Point",
+                      "FilterMode": "Bilinear",
                       "Outline": {
                         "Enabled": false,
                         "Size": 4,
@@ -539,6 +505,8 @@
   "MenuPath": null,
   "MenuIcon": null,
   "DontBreakAsTemplate": false,
-  "__references": [],
+  "__references": [
+    "facepunch.sandbox#117133"
+  ],
   "__version": 2
 }
