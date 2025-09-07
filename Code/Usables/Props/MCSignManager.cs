@@ -7,7 +7,7 @@ using Sandbox.Internal;
 namespace Ian.Usables.Props;
 
 [Title( "Minecraft Sign Manager" ), Icon( "table_sign" ), Category( "Usables" )]
-public class MCSignManager : BaseUsable
+public sealed class MCSignManager : BaseUsable
 {
 	//References for Text objects
 	[Property] TextRenderer Line1Ref { get; set; }
@@ -15,31 +15,35 @@ public class MCSignManager : BaseUsable
 	[Property] TextRenderer Line3Ref { get; set; }
 	[Property] TextRenderer Line4Ref { get; set; }
 
-	//Strings for modifying the text
-	public string Line1 { get; set; } = "Line 1";
-	public string Line2 { get; set; } = "Line 2";
-	public string Line3 { get; set; } = "Line 3";
-	public string Line4 { get; set; } = "Line 4";
-
-
 	public override void OnUse()
 	{
 		base.OnUse();
 		RefreshText();
-		// make this open a panel that lets you motify the text
+		Log.Info( "Attempted to use the sign!" );
 	}
 
 	public void RefreshText()
 	{
-		Log.Info( "MCSignManager: Sign with the ID " + this.GameObject.Id + " has been updated!" );
-		Line1Ref.Text = Line1;
-		Line2Ref.Text = Line2;
-		Line3Ref.Text = Line3;
-		Line4Ref.Text = Line4;
+		// pull cookies
+		var Line1cookie = Game.Cookies.GetString( "mcsignline1", "Line1" );
+		var Line2cookie = Game.Cookies.GetString( "mcsignline2", "Line2" );
+		var Line3cookie = Game.Cookies.GetString( "mcsignline3", "Line3" );
+		var Line4cookie = Game.Cookies.GetString( "mcsignline4", "Line4" );
+
+		Line1Ref.Text = Line1cookie;
+		Line2Ref.Text = Line2cookie;
+		Line3Ref.Text = Line3cookie;
+		Line4Ref.Text = Line4cookie;
 	}
 
-	static void SetCmd()
+	[ConCmd( "mcsign_set", Help = "Set text on the Minecraft Sign" )]
+	public static async Task SetText( string Line1, string Line2, string Line3, string Line4 )
 	{
+		Game.Cookies.Set( "mcsignline1", Line1 );
+		Game.Cookies.Set( "mcsignline2", Line2 );
+		Game.Cookies.Set( "mcsignline3", Line3 );
+		Game.Cookies.Set( "mcsignline4", Line4 );
 
+		Log.Info( "Strings set. Press use on the sign to update it!" );
 	}
 }
