@@ -19,9 +19,9 @@
         "__guid": "2c4b1668-e00f-4b50-aa88-ed998f235509",
         "__version": 1,
         "Flags": 0,
-        "Name": "ColorCube",
+        "Name": "MCSign",
         "Position": "0,0,0",
-        "Rotation": "0,0,0,1",
+        "Rotation": "0,0,1,-0.00000004371139",
         "Scale": "1,1,1",
         "Tags": "",
         "Enabled": true,
@@ -47,7 +47,7 @@
             },
             "MassCenterOverride": "0,0,0",
             "MassOverride": 0,
-            "MotionEnabled": true,
+            "MotionEnabled": false,
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
             "OnComponentEnabled": null,
@@ -56,7 +56,7 @@
             "OnComponentUpdate": null,
             "OverrideMassCenter": false,
             "RigidbodyFlags": 0,
-            "StartAsleep": false
+            "StartAsleep": true
           },
           {
             "__type": "Ian.Usables.Props.MCSignManager",
@@ -114,8 +114,8 @@
             "Flags": 0,
             "Name": "SignArt",
             "Position": "0,0,0",
-            "Rotation": "0,0,0,1",
-            "Scale": "0.5,0.5,0.5",
+            "Rotation": "0,0,-0.7071067,0.7071068",
+            "Scale": "1,1,1",
             "Tags": "",
             "Enabled": true,
             "NetworkMode": 2,
@@ -133,7 +133,7 @@
                 "MaterialGroup": null,
                 "MaterialOverride": null,
                 "Materials": null,
-                "Model": "models/dev/box.vmdl",
+                "Model": "models/props/mcsigns/sign.vmdl",
                 "OnComponentDestroy": null,
                 "OnComponentDisabled": null,
                 "OnComponentEnabled": null,
@@ -153,7 +153,7 @@
                 "__type": "Sandbox.BoxCollider",
                 "__guid": "dd4dfcfd-762b-485d-8dcd-31460554d8d8",
                 "__enabled": true,
-                "Center": "0,0,0",
+                "Center": "0,0,30.41818",
                 "Elasticity": null,
                 "Friction": null,
                 "IsTrigger": false,
@@ -168,7 +168,7 @@
                 "OnTriggerEnter": null,
                 "OnTriggerExit": null,
                 "RollingResistance": null,
-                "Scale": "50,50,50",
+                "Scale": "36.50003,3.1,18.26472",
                 "Static": false,
                 "Surface": null,
                 "SurfaceVelocity": "0,0,0"
@@ -180,8 +180,8 @@
                 "__version": 1,
                 "Flags": 0,
                 "Name": "Text1",
-                "Position": "0,0,77.28513",
-                "Rotation": "0,0,0,1",
+                "Position": "0,-1.623789,36.6652",
+                "Rotation": "0,0,0.7071067,0.7071068",
                 "Scale": "1,1,1",
                 "Tags": "",
                 "Enabled": true,
@@ -210,86 +210,11 @@
                       "BloomLayer": false,
                       "AfterUILayer": false
                     },
-                    "Scale": 0.3,
+                    "Scale": 0.05,
                     "TextScope": {
-                      "Text": "Hello! ❤",
-                      "TextColor": "0.45103,0.47149,0.5297,1",
-                      "FontName": "Poppins",
-                      "FontSize": 64,
-                      "FontWeight": 800,
-                      "FontItalic": false,
-                      "LineHeight": 1,
-                      "LetterSpacing": 0,
-                      "WordSpacing": 0,
-                      "FilterMode": "Bilinear",
-                      "Outline": {
-                        "Enabled": false,
-                        "Size": 4,
-                        "Color": "0,0,1,1"
-                      },
-                      "Shadow": {
-                        "Enabled": false,
-                        "Size": 4,
-                        "Color": "0,0,0,1",
-                        "Offset": "4,4"
-                      },
-                      "OutlineUnder": {
-                        "Enabled": false,
-                        "Size": 4,
-                        "Color": "0,1,0,1"
-                      },
-                      "ShadowUnder": {
-                        "Enabled": false,
-                        "Size": 4,
-                        "Color": "0,0,0,1",
-                        "Offset": "4,4"
-                      }
-                    },
-                    "VerticalAlignment": "Center"
-                  }
-                ],
-                "Children": []
-              },
-              {
-                "__guid": "d8c0360c-5baa-453c-a5ae-d33dd076f37d",
-                "__version": 1,
-                "Flags": 0,
-                "Name": "Text3",
-                "Position": "0,0,52.16391",
-                "Rotation": "0,0,0,1",
-                "Scale": "1,1,1",
-                "Tags": "",
-                "Enabled": true,
-                "NetworkMode": 2,
-                "NetworkInterpolation": true,
-                "NetworkOrphaned": 0,
-                "OwnerTransfer": 1,
-                "Components": [
-                  {
-                    "__type": "Sandbox.TextRenderer",
-                    "__guid": "15c4aca2-22d6-4eba-9039-02e1771a678d",
-                    "__enabled": true,
-                    "__version": 2,
-                    "BlendMode": "Normal",
-                    "FogStrength": 1,
-                    "HorizontalAlignment": "Center",
-                    "OnComponentDestroy": null,
-                    "OnComponentDisabled": null,
-                    "OnComponentEnabled": null,
-                    "OnComponentFixedUpdate": null,
-                    "OnComponentStart": null,
-                    "OnComponentUpdate": null,
-                    "RenderOptions": {
-                      "GameLayer": true,
-                      "OverlayLayer": false,
-                      "BloomLayer": false,
-                      "AfterUILayer": false
-                    },
-                    "Scale": 0.3,
-                    "TextScope": {
-                      "Text": "Hello! ❤",
-                      "TextColor": "0.45103,0.47149,0.5297,1",
-                      "FontName": "Poppins",
+                      "Text": "Hello!",
+                      "TextColor": "0,0,0,1",
+                      "FontName": "Mojangles",
                       "FontSize": 64,
                       "FontWeight": 800,
                       "FontItalic": false,
@@ -330,8 +255,8 @@
                 "__version": 1,
                 "Flags": 0,
                 "Name": "Text2",
-                "Position": "0,0,64.09037",
-                "Rotation": "0,0,0,1",
+                "Position": "0,-1.623789,32.87011",
+                "Rotation": "0,0,0.7071067,0.7071068",
                 "Scale": "1,1,1",
                 "Tags": "",
                 "Enabled": true,
@@ -360,11 +285,86 @@
                       "BloomLayer": false,
                       "AfterUILayer": false
                     },
-                    "Scale": 0.3,
+                    "Scale": 0.05,
                     "TextScope": {
-                      "Text": "Hello! ❤",
-                      "TextColor": "0.45103,0.47149,0.5297,1",
-                      "FontName": "Poppins",
+                      "Text": "Use the \"mcsign_set\" ",
+                      "TextColor": "0,0,0,1",
+                      "FontName": "Mojangles",
+                      "FontSize": 64,
+                      "FontWeight": 800,
+                      "FontItalic": false,
+                      "LineHeight": 1,
+                      "LetterSpacing": 0,
+                      "WordSpacing": 0,
+                      "FilterMode": "Bilinear",
+                      "Outline": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,1,1"
+                      },
+                      "Shadow": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,0,1",
+                        "Offset": "4,4"
+                      },
+                      "OutlineUnder": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,1,0,1"
+                      },
+                      "ShadowUnder": {
+                        "Enabled": false,
+                        "Size": 4,
+                        "Color": "0,0,0,1",
+                        "Offset": "4,4"
+                      }
+                    },
+                    "VerticalAlignment": "Center"
+                  }
+                ],
+                "Children": []
+              },
+              {
+                "__guid": "d8c0360c-5baa-453c-a5ae-d33dd076f37d",
+                "__version": 1,
+                "Flags": 0,
+                "Name": "Text3",
+                "Position": "0,-1.623789,29.06841",
+                "Rotation": "0,0,0.7071067,0.7071068",
+                "Scale": "1,1,1",
+                "Tags": "",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "NetworkOrphaned": 0,
+                "OwnerTransfer": 1,
+                "Components": [
+                  {
+                    "__type": "Sandbox.TextRenderer",
+                    "__guid": "15c4aca2-22d6-4eba-9039-02e1771a678d",
+                    "__enabled": true,
+                    "__version": 2,
+                    "BlendMode": "Normal",
+                    "FogStrength": 1,
+                    "HorizontalAlignment": "Center",
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "RenderOptions": {
+                      "GameLayer": true,
+                      "OverlayLayer": false,
+                      "BloomLayer": false,
+                      "AfterUILayer": false
+                    },
+                    "Scale": 0.05,
+                    "TextScope": {
+                      "Text": "command to change",
+                      "TextColor": "0,0,0,1",
+                      "FontName": "Mojangles",
                       "FontSize": 64,
                       "FontWeight": 800,
                       "FontItalic": false,
@@ -405,8 +405,8 @@
                 "__version": 1,
                 "Flags": 0,
                 "Name": "Text4",
-                "Position": "0,0,39.11141",
-                "Rotation": "0,0,0,1",
+                "Position": "0,-1.623789,25.12609",
+                "Rotation": "0,0,0.7071067,0.7071068",
                 "Scale": "1,1,1",
                 "Tags": "",
                 "Enabled": true,
@@ -435,11 +435,11 @@
                       "BloomLayer": false,
                       "AfterUILayer": false
                     },
-                    "Scale": 0.3,
+                    "Scale": 0.05,
                     "TextScope": {
-                      "Text": "Hello! ❤",
-                      "TextColor": "0.45103,0.47149,0.5297,1",
-                      "FontName": "Poppins",
+                      "Text": "the text on the sign!",
+                      "TextColor": "0,0,0,1",
+                      "FontName": "Mojangles",
                       "FontSize": 64,
                       "FontWeight": 800,
                       "FontItalic": false,
@@ -474,6 +474,48 @@
                   }
                 ],
                 "Children": []
+              },
+              {
+                "__guid": "239d911f-4f2d-4594-83d9-0f07060ce7d9",
+                "__version": 1,
+                "Flags": 0,
+                "Name": "ExtraCol",
+                "Position": "0,0,10.70784",
+                "Rotation": "0,0,0,1",
+                "Scale": "1,1,1",
+                "Tags": "",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "NetworkOrphaned": 0,
+                "OwnerTransfer": 1,
+                "Components": [
+                  {
+                    "__type": "Sandbox.BoxCollider",
+                    "__guid": "2b84e27b-85e1-48ff-af62-7bf5893d9267",
+                    "__enabled": true,
+                    "Center": "0,0,-0.05775738",
+                    "Elasticity": null,
+                    "Friction": null,
+                    "IsTrigger": false,
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "OnObjectTriggerEnter": null,
+                    "OnObjectTriggerExit": null,
+                    "OnTriggerEnter": null,
+                    "OnTriggerExit": null,
+                    "RollingResistance": null,
+                    "Scale": "3.1,3.1,21.31552",
+                    "Static": false,
+                    "Surface": null,
+                    "SurfaceVelocity": "0,0,0"
+                  }
+                ],
+                "Children": []
               }
             ]
           }
@@ -505,8 +547,6 @@
   "MenuPath": null,
   "MenuIcon": null,
   "DontBreakAsTemplate": false,
-  "__references": [
-    "facepunch.sandbox#117133"
-  ],
+  "__references": [],
   "__version": 2
 }

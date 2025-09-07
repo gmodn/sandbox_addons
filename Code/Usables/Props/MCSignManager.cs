@@ -40,7 +40,7 @@ public class MCSignManager : BaseUsable
 		Line4Ref.Text = Line4cookie;
 	}
 
-	[ConCmd( "mcsign_set", Help = "Set text on the Minecraft Sign" )]
+	[ConCmd( "mcsign_set", Help = "Set text on the Minecraft Sign. Each line is set individually. Syntax: string Line1, string Line2, string Line3, string Line4" )]
 	public static async Task SetText( string Line1, string Line2, string Line3, string Line4 )
 	{
 		Game.Cookies.Set( "mcsignline1", Line1 );
