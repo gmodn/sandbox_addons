@@ -1,0 +1,8 @@
+{
+  "Prefab": "prefabs/spawnables/usables/experimentals/usables_mcsign_wall.prefab",
+  "Title": "Minecraft Wall Sign",
+  "Description": "Functional Minecraft Wall Sign!",
+  "IncludeCode": true,
+  "__references": [],
+  "__version": 0
+}

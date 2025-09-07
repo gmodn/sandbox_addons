@@ -1,0 +1,21 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "Minecraft Sign Wall",
+      "Type": "sent",
+      "Org": "gmodn",
+      "Ident": "usables_mcsign_wall",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "prefabs/spawnables/usables/experimentals/usables_mcsign_wall.sent"
+      }
+    }
+  }
+}
